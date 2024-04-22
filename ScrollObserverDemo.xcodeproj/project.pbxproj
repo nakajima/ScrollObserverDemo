@@ -11,9 +11,7 @@
 		A6C3AAF52BD719D400E91745 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3AAF42BD719D400E91745 /* ContentView.swift */; };
 		A6C3AAF72BD719D500E91745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C3AAF62BD719D500E91745 /* Assets.xcassets */; };
 		A6C3AAFA2BD719D500E91745 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C3AAF92BD719D500E91745 /* Preview Assets.xcassets */; };
-		A6C3AB042BD719D500E91745 /* ScrollObserverDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3AB032BD719D500E91745 /* ScrollObserverDemoTests.swift */; };
-		A6C3AB0E2BD719D500E91745 /* ScrollObserverDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3AB0D2BD719D500E91745 /* ScrollObserverDemoUITests.swift */; };
-		A6C3AB102BD719D500E91745 /* ScrollObserverDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3AB0F2BD719D500E91745 /* ScrollObserverDemoUITestsLaunchTests.swift */; };
+		A6C3AB1E2BD719F800E91745 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A6C3AB1D2BD719F800E91745 /* AsyncAlgorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +38,7 @@
 		A6C3AAF62BD719D500E91745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C3AAF92BD719D500E91745 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6C3AAFF2BD719D500E91745 /* ScrollObserverDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollObserverDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6C3AB032BD719D500E91745 /* ScrollObserverDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollObserverDemoTests.swift; sourceTree = "<group>"; };
 		A6C3AB092BD719D500E91745 /* ScrollObserverDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollObserverDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6C3AB0D2BD719D500E91745 /* ScrollObserverDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollObserverDemoUITests.swift; sourceTree = "<group>"; };
-		A6C3AB0F2BD719D500E91745 /* ScrollObserverDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollObserverDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C3AB1E2BD719F800E91745 /* AsyncAlgorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				A6C3AAF12BD719D400E91745 /* ScrollObserverDemo */,
-				A6C3AB022BD719D500E91745 /* ScrollObserverDemoTests */,
-				A6C3AB0C2BD719D500E91745 /* ScrollObserverDemoUITests */,
 				A6C3AAF02BD719D400E91745 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,23 +104,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A6C3AB022BD719D500E91745 /* ScrollObserverDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				A6C3AB032BD719D500E91745 /* ScrollObserverDemoTests.swift */,
-			);
-			path = ScrollObserverDemoTests;
-			sourceTree = "<group>";
-		};
-		A6C3AB0C2BD719D500E91745 /* ScrollObserverDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A6C3AB0D2BD719D500E91745 /* ScrollObserverDemoUITests.swift */,
-				A6C3AB0F2BD719D500E91745 /* ScrollObserverDemoUITestsLaunchTests.swift */,
-			);
-			path = ScrollObserverDemoUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +120,9 @@
 			dependencies = (
 			);
 			name = ScrollObserverDemo;
+			packageProductDependencies = (
+				A6C3AB1D2BD719F800E91745 /* AsyncAlgorithms */,
+			);
 			productName = ScrollObserverDemo;
 			productReference = A6C3AAEF2BD719D400E91745 /* ScrollObserverDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +195,9 @@
 				Base,
 			);
 			mainGroup = A6C3AAE62BD719D400E91745;
+			packageReferences = (
+				A6C3AB1C2BD719F800E91745 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+			);
 			productRefGroup = A6C3AAF02BD719D400E91745 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C3AB042BD719D500E91745 /* ScrollObserverDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C3AB102BD719D500E91745 /* ScrollObserverDemoUITestsLaunchTests.swift in Sources */,
-				A6C3AB0E2BD719D500E91745 /* ScrollObserverDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +568,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6C3AB1C2BD719F800E91745 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6C3AB1D2BD719F800E91745 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C3AB1C2BD719F800E91745 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6C3AAE72BD719D400E91745 /* Project object */;
 }
